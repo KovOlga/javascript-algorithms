@@ -14,11 +14,31 @@
 */
 
 function palindrome(str) {
-    // Напишите код здесь
+    // for (let i = 0; i < Math.floor(str.length / 2); i++) {
+    //     if (str[i].toLowerCase() !== str[str.length - i - 1].toLowerCase()) return false;
+    // }
+    // return true;
+
+    // const lowerWord = str.toLowerCase()
+    // console.log(lowerWord)
+    // const splitWord = lowerWord.split('')
+    // console.log(splitWord)
+    // const reverseArr = splitWord.reverse()
+    // console.log(reverseArr)
+    // const againString = reverseArr.join('')
+    // console.log(againString)
+    // if (str === againString) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+
+    const toLowerCaseStr = str.toLowerCase();
+    const reversedStr = toLowerCaseStr.split('').reverse().join('')
+    return toLowerCaseStr === reversedStr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
-
 console.log(palindrome('топот')); // должно быть true
 console.log(palindrome('Saippuakivikauppias')); // true
 console.log(palindrome('привет')); // false
