@@ -7,9 +7,19 @@
 */
 
 function capitalize(str) {
-    // Напишите код здесь
+    if (!(str === ' ') && !(str === '')) {
+        const ableStr = str.trim();
+        if (typeof ableStr === 'string') {
+            const res = ableStr.split(' ').map((item) => item[0].toUpperCase() + item.slice(1)).join(' ');
+            console.log('esti')
+            return res
+        }
+    } else {
+        console.log('Пустая строка');
+        return str;
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"
+console.log(capitalize('  молодость всё простит')); // "Молодость Всё Простит"

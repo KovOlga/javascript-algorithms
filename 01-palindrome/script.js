@@ -14,11 +14,15 @@
 */
 
 function palindrome(str) {
-    // Напишите код здесь
+    const regExp = /\W/g;
+    const toLowerCaseStr = str.toLowerCase();
+    toLowerCaseStr.replace(regExp, '');
+    const reversedStr = toLowerCaseStr.split('').reverse().join('')
+    return toLowerCaseStr === reversedStr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
-
+console.log(palindrome('топ от!'));
 console.log(palindrome('топот')); // должно быть true
 console.log(palindrome('Saippuakivikauppias')); // true
 console.log(palindrome('привет')); // false
