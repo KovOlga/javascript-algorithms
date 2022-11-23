@@ -21,18 +21,7 @@ function fizzBuzz(num) {
         } else {
             console.log(i)
         }
-
-        // let str = "";
-        // if (i % 3 === 0) {
-        //     str += "fizz";
-        // }
-        // if (i % 5 === 0) {
-        //     str += "buzz";
-        // }
-        // console.log(str.length > 0 ? str : i);
     }
-
-
 }
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

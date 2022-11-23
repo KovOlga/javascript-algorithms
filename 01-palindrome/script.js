@@ -14,10 +14,6 @@
 */
 
 function palindrome(str) {
-    // for (let i = 0; i < Math.floor(str.length / 2); i++) {
-    //     if (str[i].toLowerCase() !== str[str.length - i - 1].toLowerCase()) return false;
-    // }
-    // return true;
     const regExp = /\W/g;
     const toLowerCaseStr = str.toLowerCase();
     toLowerCaseStr.replace(regExp, '');
