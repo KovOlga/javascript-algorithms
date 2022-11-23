@@ -19,7 +19,7 @@ function palindrome(str) {
     // }
     // return true;
     const regExp = /\W/g;
-    const toLowerCaseStr = str.toLowerCase();//.replace(regExp, '');
+    const toLowerCaseStr = str.toLowerCase();
     toLowerCaseStr.replace(regExp, '');
     const reversedStr = toLowerCaseStr.split('').reverse().join('')
     return toLowerCaseStr === reversedStr;
