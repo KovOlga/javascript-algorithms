@@ -15,10 +15,10 @@
 
 function palindrome(str) {
     const regExp = /\W/g;
-    const toLowerCaseStr = str.toLowerCase();
-    toLowerCaseStr.replace(regExp, '');
-    const reversedStr = toLowerCaseStr.split('').reverse().join('')
-    return toLowerCaseStr === reversedStr;
+    const loweredCaseStr = str.toLowerCase();
+    loweredCaseStr.replace(regExp, '');
+    const reversedStr = loweredCaseStr.split('').reverse().join('')
+    return loweredCaseStr === reversedStr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
