@@ -14,10 +14,10 @@ function countZeros(n) {
         numberArr.forEach(function (item) {
             if (item === '0') {
                 counter += 1;
-            };
+            }
             return counter;
         });
-    };
+    }
     return counter;
 }
 
