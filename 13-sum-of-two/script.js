@@ -9,7 +9,17 @@
 */
 
 function sumOfTwo(arr, sum) {
-    // Напишите код здесь
+    const firstSumExternal = arr.some(function (currentNumber, currentIndex) {
+        const otherNumber = sum - currentNumber;
+        for (let i = 0; i < arr.length; i++) {
+            if (i !== currentIndex && arr[i] === otherNumber) {
+                return true;
+            }
+        }
+        return false;
+    });
+
+    return firstSumExternal;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
