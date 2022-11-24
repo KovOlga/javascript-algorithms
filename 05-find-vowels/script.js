@@ -15,7 +15,7 @@ function findVowels(str) {
         const flattenedStr = str.toLowerCase();
         if (flattenedStr.includes(item)) {
             vowelsCounter += 1;
-        };
+        }
         return vowelsCounter;
     })
     return vowelsCounter;

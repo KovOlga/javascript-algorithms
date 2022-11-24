@@ -8,7 +8,32 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    // console.log(arr1);
+    // console.log(arr2);
+    const intersectionArr = [];
+
+    arr1.forEach((arr1Item) => {
+        // console.log(arr1Item + ' arr1Item //////')
+        let newItem = arr2.find(function (arr2Item) {
+            // console.log(arr2Item + ' arr2Item');
+            // console.log(arr1Item === arr2Item);
+            return arr1Item === arr2Item;
+        })
+        // console.log(intersectionArr);
+        // console.log(newItem + ' newItem');
+        if (newItem === undefined) {
+            return intersectionArr;
+        }
+        for (let i = 0; i < intersectionArr.length; i++) {
+            if (newItem === intersectionArr[i]) {
+                return intersectionArr;
+            }
+        }
+        intersectionArr.push(newItem);
+        // console.log(intersectionArr);
+        return intersectionArr;
+    });
+    return intersectionArr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
