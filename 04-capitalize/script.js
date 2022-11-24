@@ -11,7 +11,6 @@ function capitalize(str) {
         const ableStr = str.trim();
         if (typeof ableStr === 'string') {
             const res = ableStr.split(' ').map((item) => item[0].toUpperCase() + item.slice(1)).join(' ');
-            console.log('esti')
             return res
         }
     } else {
